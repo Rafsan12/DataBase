@@ -8,3 +8,9 @@ ALTER Table person
     DROP COLUMN is_active;
 
 INSERT INTO person VALUES (1, 'Rafsan', 'Ahmed', 26, FALSE, '1998-07-29', 'r@gmail.com');
+
+ALTER Table person
+    ADD constraint unique_person_age UNIQUE(age);
+
+ALTER Table person
+    DROP constraint unique_person_age;
