@@ -1,0 +1,9 @@
+SHOW TIMEZONE;
+
+SELECT now();
+
+SELECT to_char(now(), 'DDD')
+
+SELECT age(CURRENT_DATE, '1998-07-29');
+
+SELECT 1:: BOOLEAN;
